@@ -1,7 +1,7 @@
 {
   "name": "ch32v003_spi",
-  "version": "1.0.0",
-  "description": "Thư viện điều khiển Hardware SPI1 nâng cao cho CH32V003 hỗ trợ tự động nhận diện và cấu hình Remap chân thích ứng theo các chuẩn đóng gói chip (SOP8, SOP16, TSSOP20).",
+  "version": "2.0.0",
+  "description": "Thư viện SPI Master cho CH32V003 theo Handle: SPI1 phần cứng (F4P6, tới 24MHz) và SPI phần mềm trên chân bất kỳ, chung một API.",
   "keywords": [
     "spi",
     "hardware-spi",
@@ -10,16 +10,25 @@
     "ch32v003",
     "ch32v003fun"
   ],
+  "homepage": "https://github.com/voc-vach-iot-ch32v003/ch32v003_spi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voc-vach-iot-ch32v003/ch32v003_spi.git"
+  },
+  "license": "MIT",
   "authors": [
     {
       "name": "Vọc Vạch IoT",
+      "email": "vocvachiot@gmail.com",
       "maintainer": true
     }
   ],
   "frameworks": ["ch32v003fun"],
   "platforms": ["ch32v"],
-  "build": {
-    "flags": ["-I ."]
-  },
-  "dependencies": ["https://github.com/voc-vach-iot-ch32v003/ch32v003_gpio.git"]
+  "dependencies": [
+    {
+      "name": "ch32v003_gpio",
+      "version": "https://github.com/voc-vach-iot-ch32v003/ch32v003_gpio.git"
+    }
+  ]
 }
