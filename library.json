@@ -1,6 +1,6 @@
 {
   "name": "ch32v003_spi",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Thư viện SPI Master cho CH32V003 theo Handle: SPI1 phần cứng (F4P6, tới 24MHz) và SPI phần mềm trên chân bất kỳ, chung một API.",
   "keywords": [
     "spi",
@@ -28,7 +28,7 @@
   "dependencies": [
     {
       "name": "ch32v003_gpio",
-      "version": "https://github.com/voc-vach-iot-ch32v003/ch32v003_gpio.git"
+      "version": "https://github.com/voc-vach-iot-ch32v003/ch32v003_gpio.git#v2.0.1"
     }
   ]
 }
